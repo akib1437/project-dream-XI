@@ -1,6 +1,6 @@
 # Project Dream XI 🏏
 
-### Live Demo: [Cricket Dream Team](https://akib-tanzim.surge.sh/)
+### Live Demo: [Dream XI](https://akib-tanzim.surge.sh/)
 
 ### Build Your Ultimate Dream 11 Cricket Squad
 
