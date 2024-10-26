@@ -1,6 +1,7 @@
 import './App.css'
 import Navbar from './components/Navbar/Navbar.jsx';
-import Banner from './components/Banner/Banner';
+import Banner from './components/Banner/Banner.jsx';
+import ShowData from './components/ShowData/ShowData.jsx';
 import { useState } from 'react';
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
     <div>
       <Navbar coins={coins}/>
       <Banner increaseCoins={increaseCoins}/>
+      <ShowData coins={coins} setCoins={setCoins}></ShowData>
     </div>
   );
 };

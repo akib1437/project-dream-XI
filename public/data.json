@@ -1,16 +1,7 @@
 [
+    
     {
         "playerId": 1,
-        "name": "Virat Kohli",
-        "country": "India",
-        "image": "https://img.jagranjosh.com/images/2022/January/1812022/Virat-Kohli-Biography.jpg",
-        "role": "Batsman",
-        "battingType": "Right-handed",
-        "bowlingType": "Right-arm medium",
-        "biddingPrice": 25000
-    },
-    {
-        "playerId": 2,
         "name": "Steve Smith",
         "country": "Australia",
         "image": "https://media.gettyimages.com/id/1288367254/photo/sydney-australia-steve-smith-of-australia-celebrates-making-100-runs-during-game-two-of-the.jpg?s=612x612&w=0&k=20&c=SkWT_AlcNvKcvc4Puo8RJeau3yaVKN6Kn4LCtR_FkYs=",
@@ -18,6 +9,16 @@
         "battingType": "Right-handed",
         "bowlingType": "Right-arm leg-spin",
         "biddingPrice": 22000
+    },
+    {
+        "playerId": 2,
+        "name": "Virat Kohli",
+        "country": "India",
+        "image": "https://img.jagranjosh.com/images/2022/January/1812022/Virat-Kohli-Biography.jpg",
+        "role": "Batsman",
+        "battingType": "Right-handed",
+        "bowlingType": "Right-arm medium",
+        "biddingPrice": 25000
     },
     {
         "playerId": 3,
@@ -29,18 +30,9 @@
         "bowlingType": "Right-arm off-spin",
         "biddingPrice": 20000
     },
+    
     {
         "playerId": 4,
-        "name": "Ben Stokes",
-        "country": "England",
-        "image": "https://media.gettyimages.com/id/1409776304/photo/chester-le-street-england-england-batsman-ben-stokes-acknowledges-the-applause-as-he-leaves.jpg?s=612x612&w=0&k=20&c=hjPgXz3WkM_hDG9ZEgCk5sYzAMutdZwAQOuIyWjt9lw=",
-        "role": "All-Rounder",
-        "battingType": "Left-handed",
-        "bowlingType": "Right-arm fast-medium",
-        "biddingPrice": 28000
-    },
-    {
-        "playerId": 5,
         "name": "Rashid Khan",
         "country": "Afghanistan",
         "image": "https://media.gettyimages.com/id/2155156903/photo/port-of-spain-trinidad-and-tobago-rashid-khan-of-afghanistan-poses-for-a-portrait-prior-to.jpg?s=612x612&w=0&k=20&c=5xneNPkFaMq2b-hDXdNTA1xv4-fwB3TSO_Qq1ITEz30=",
@@ -48,6 +40,16 @@
         "battingType": "Right-handed",
         "bowlingType": "Right-arm leg-spin",
         "biddingPrice": 24000
+    },
+    {
+        "playerId": 5,
+        "name": "Ben Stokes",
+        "country": "England",
+        "image": "https://media.gettyimages.com/id/1409776304/photo/chester-le-street-england-england-batsman-ben-stokes-acknowledges-the-applause-as-he-leaves.jpg?s=612x612&w=0&k=20&c=hjPgXz3WkM_hDG9ZEgCk5sYzAMutdZwAQOuIyWjt9lw=",
+        "role": "All-Rounder",
+        "battingType": "Left-handed",
+        "bowlingType": "Right-arm fast-medium",
+        "biddingPrice": 28000
     },
     {
         "playerId": 6,
