@@ -12,7 +12,7 @@ const ShowData = ({ credit, setCredit }) => {
     const playerLimit = 6;
 
     useEffect(() => {
-        fetch('/public/data.json')
+        fetch('data.json')
             .then(res => res.json())
             .then(data => setDataDisplay(data))
             .catch((error) => console.error("Error fetching data:", error));
@@ -92,7 +92,7 @@ const ShowData = ({ credit, setCredit }) => {
                                 </p>
                             </div>
                             <div className="card-actions mt-4">
-                                <button className="btn border rounded-lg bg-slate-100 px-6 md:px-8 text-lg md:text-xl mt-2 ml-4 md:ml-10 mb-6 md:mb-10 font-medium p-2" onClick={() => handleSelectedPlayer(player)}>
+                                <button className="btn border rounded-lg bg-slate-100 hover:bg-blue-200 px-6 md:px-8 text-lg md:text-xl mt-2 ml-4 md:ml-10 mb-6 md:mb-10 font-medium p-2" onClick={() => handleSelectedPlayer(player)}>
                                     Choose player
                                 </button>
                             </div>
