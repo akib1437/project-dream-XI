@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const ShowData = ({ coins, setCoins }) => {
+const ShowData = ({ credit, setCredit }) => {
 
     const [display, setDisplay] = useState([]);
     const [selectedPlayers, setSelectedPlayers] = useState([]);
@@ -29,13 +29,13 @@ const ShowData = ({ coins, setCoins }) => {
             return;
         }
 
-        if (coins < player.biddingPrice) {
+        if (credit < player.biddingPrice) {
             toast.error(`You need more coins to select ${player.name}!`);
             return;
         }
 
 
-        setCoins(coins - player.biddingPrice);
+        setCredit(credit - player.biddingPrice);
         setSelectedPlayers([...selectedPlayers, player]);
         toast.success(`${player.name} selected successfully!`);
 
@@ -59,10 +59,10 @@ const ShowData = ({ coins, setCoins }) => {
                 </h2>
                 <div>
 
-                    <button className={`btn ${isAvailable ? 'bg-yellow-300' : 'bg-slate-200'} block md:inline-block px-6 md:px-10 py-3 md:rounded-l-lg font-semibold mt-6 md:mt-0`}
+                    <button className={`btn ${isAvailable ? 'bg-primaryclr' : 'bg-slate-200'} block md:inline-block px-6 md:px-10 py-3 md:rounded-l-lg font-semibold mt-6 md:mt-0`}
                         onClick={() => handleToggleView('available')}>Available</button>
 
-                    <button className={`btn ${!isAvailable ? 'bg-yellow-300' : 'bg-slate-200'} block md:inline-block px-4 md:px-8 py-3 rounded-r-lg font-semibold mt-3 md:mt-0`}
+                    <button className={`btn ${!isAvailable ? 'bg-primaryclr' : 'bg-slate-200'} block md:inline-block px-4 md:px-8 py-3 rounded-r-lg font-semibold mt-3 md:mt-0`}
                         onClick={() => handleToggleView('selected')}>Selected <span>({selectedPlayers.length})</span></button>
 
                 </div>
@@ -124,7 +124,7 @@ const ShowData = ({ coins, setCoins }) => {
                                     </li>
                                 ))}
                             </ul>
-                            <button className="btn bg-yellow-300 px-8 py-3 rounded-lg font-bold" onClick={() => handleToggleView('available')}>
+                                    <button className="btn bg-primaryclr px-8 py-3 rounded-lg font-bold" onClick={() => handleToggleView('available')}>
                                 Add More Player
                             </button>
                         </div>
@@ -136,8 +136,8 @@ const ShowData = ({ coins, setCoins }) => {
 };
 
 ShowData.propTypes = {
-    coins: PropTypes.number.isRequired,
-    setCoins: PropTypes.func.isRequired,
+    credit: PropTypes.number.isRequired,
+    setCredit: PropTypes.func.isRequired,
 }
 
 export default ShowData;
