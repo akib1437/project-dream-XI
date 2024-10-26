@@ -15,7 +15,7 @@ const Navbar = ({ coins = 0 }) => {
 
             <div className="container mx-auto flex justify-between items-center">
                 <div className="flex items-center">
-                    <img className="w-12 h-auto" src="/public/assets/logo.png" alt="" />
+                    <img className="w-12 h-auto" src="/dist/assets/logo.png" alt="" />
                 </div>
             </div>
 
@@ -92,7 +92,6 @@ const Navbar = ({ coins = 0 }) => {
             }
         </nav>
     );
-    
 };
 
 Navbar.propTypes = {

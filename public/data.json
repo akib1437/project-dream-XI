@@ -1,0 +1,122 @@
+[
+    {
+        "playerId": 1,
+        "name": "Virat Kohli",
+        "country": "India",
+        "image": "https://img.jagranjosh.com/images/2022/January/1812022/Virat-Kohli-Biography.jpg",
+        "role": "Batsman",
+        "battingType": "Right-handed",
+        "bowlingType": "Right-arm medium",
+        "biddingPrice": 25000
+    },
+    {
+        "playerId": 2,
+        "name": "Steve Smith",
+        "country": "Australia",
+        "image": "https://media.gettyimages.com/id/1288367254/photo/sydney-australia-steve-smith-of-australia-celebrates-making-100-runs-during-game-two-of-the.jpg?s=612x612&w=0&k=20&c=SkWT_AlcNvKcvc4Puo8RJeau3yaVKN6Kn4LCtR_FkYs=",
+        "role": "Batsman",
+        "battingType": "Right-handed",
+        "bowlingType": "Right-arm leg-spin",
+        "biddingPrice": 22000
+    },
+    {
+        "playerId": 3,
+        "name": "Kane Williamson",
+        "country": "New Zealand",
+        "image": "https://media.gettyimages.com/id/1733747786/photo/chennai-india-kane-williamson-of-new-zealand-looks-on-with-a-bandage-on-their-hand-following.jpg?s=612x612&w=0&k=20&c=GsEGGmXEShVAR3H03SyORYXLy6DDnIakXLq-JimqAAE=",
+        "role": "Batsman",
+        "battingType": "Right-handed",
+        "bowlingType": "Right-arm off-spin",
+        "biddingPrice": 20000
+    },
+    {
+        "playerId": 4,
+        "name": "Ben Stokes",
+        "country": "England",
+        "image": "https://media.gettyimages.com/id/1409776304/photo/chester-le-street-england-england-batsman-ben-stokes-acknowledges-the-applause-as-he-leaves.jpg?s=612x612&w=0&k=20&c=hjPgXz3WkM_hDG9ZEgCk5sYzAMutdZwAQOuIyWjt9lw=",
+        "role": "All-Rounder",
+        "battingType": "Left-handed",
+        "bowlingType": "Right-arm fast-medium",
+        "biddingPrice": 28000
+    },
+    {
+        "playerId": 5,
+        "name": "Rashid Khan",
+        "country": "Afghanistan",
+        "image": "https://media.gettyimages.com/id/2155156903/photo/port-of-spain-trinidad-and-tobago-rashid-khan-of-afghanistan-poses-for-a-portrait-prior-to.jpg?s=612x612&w=0&k=20&c=5xneNPkFaMq2b-hDXdNTA1xv4-fwB3TSO_Qq1ITEz30=",
+        "role": "Bowler",
+        "battingType": "Right-handed",
+        "bowlingType": "Right-arm leg-spin",
+        "biddingPrice": 24000
+    },
+    {
+        "playerId": 6,
+        "name": "Babar Azam",
+        "country": "Pakistan",
+        "image": "https://media.gettyimages.com/id/1713408997/photo/hyderabad-india-babar-azam-of-pakistan-poses-for-a-portrait-ahead-of-the-icc-mens-cricket.jpg?s=612x612&w=0&k=20&c=HXkZUm36bM63Eo2pCnDtzakGL1pgpJHS9cy2dRgTsiY=",
+        "role": "Batsman",
+        "battingType": "Right-handed",
+        "bowlingType": "Right-arm off-spin",
+        "biddingPrice": 26000
+    },
+    {
+        "playerId": 7,
+        "name": "Trent Boult",
+        "country": "New Zealand",
+        "image": "https://media.gettyimages.com/id/1711506534/photo/thiruvananthapuram-india-trent-boult-of-new-zealand-poses-for-a-portrait-ahead-of-the-icc.jpg?s=612x612&w=0&k=20&c=ItA78fKIllVZpCR76e4nz3Xe2BBAmwN5G79aKN2eOps=",
+        "role": "Bowler",
+        "battingType": "Left-handed",
+        "bowlingType": "Left-arm fast",
+        "biddingPrice": 18000
+    },
+    {
+        "playerId": 8,
+        "name": "Hardik Pandya",
+        "country": "India",
+        "image": "https://media.gettyimages.com/id/1434940870/photo/brisbane-australia-hardik-pandya-poses-during-the-india-icc-mens-t20-cricket-world-cup-2022.jpg?s=612x612&w=0&k=20&c=Mpam6lpUSX7eo9q4Bzz341p1CR9YefkahdRdj6NhMCM=",
+        "role": "All-Rounder",
+        "battingType": "Right-handed",
+        "bowlingType": "Right-arm fast-medium",
+        "biddingPrice": 27000
+    },
+    {
+        "playerId": 9,
+        "name": "Jos Buttler",
+        "country": "England",
+        "image": "https://media.gettyimages.com/id/1434286842/photo/brisbane-australia-jos-buttler-poses-during-the-england-icc-mens-t20-cricket-world-cup-2022.jpg?s=612x612&w=0&k=20&c=goQyO7d15LZB1sOWmIif9NARcktU3oBsMz45gBaW4t8=",
+        "role": "Wicketkeeper-Batsman",
+        "battingType": "Right-handed",
+        "bowlingType": "Right-arm off-spin",
+        "biddingPrice": 23000
+    },
+    {
+        "playerId": 10,
+        "name": "Glenn Maxwell",
+        "country": "Australia",
+        "image": "https://media.gettyimages.com/id/1780371983/photo/mumbai-india-glenn-maxwell-of-australia-poses-after-being-named-player-of-the-match-following.jpg?s=612x612&w=0&k=20&c=_HUiILJQi9N4NnMeYp61omxCoDEqR5DihKhi0twXCjg=",
+        "role": "All-Rounder",
+        "battingType": "Right-handed",
+        "bowlingType": "Right-arm off-spin",
+        "biddingPrice": 21000
+    },
+    {
+        "playerId": 11,
+        "name": "Shaheen Afridi",
+        "country": "Pakistan",
+        "image": "https://media.gettyimages.com/id/2155759897/photo/dallas-texas-shaheen-shah-afridi-of-pakistan-poses-for-a-portrait-prior-to-the-icc-mens-t20.jpg?s=612x612&w=0&k=20&c=hmVxe8ZWUAUE1Qtsj2npiwJUR_VCle1FcN2TK2qFh3Y=",
+        "role": "Bowler",
+        "battingType": "Left-handed",
+        "bowlingType": "Left-arm fast",
+        "biddingPrice": 26000
+    },
+    {
+        "playerId": 12,
+        "name": "Andre Russell",
+        "country": "West Indies",
+        "image": "https://media.gettyimages.com/id/1358913281/photo/melbourne-australia-andre-russell-of-the-stars-poses-during-the-melbourne-stars-big-bash.jpg?s=612x612&w=0&k=20&c=yLp64FPHQXpEaOA9nNLWZzO9Jlh1ARLzQoOXxFfwJzg=",
+        "role": "All-Rounder",
+        "battingType": "Right-handed",
+        "bowlingType": "Right-arm fast",
+        "biddingPrice": 30000
+    }
+]

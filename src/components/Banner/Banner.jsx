@@ -2,11 +2,11 @@ import PropTypes from 'prop-types';
 
 const Banner = ({ increaseCoins }) => {
     return (
-        <div className=" bg-black bg-cover bg-center text-center py-20 p-4 w-5/6 mx-auto rounded-lg" style={{ backgroundImage: "url('/assets/assets/bg-shadow.png')" }}>
+        <div className=" bg-black bg-cover bg-center text-center py-20 p-4 w-5/6 mx-auto rounded-lg" style={{ backgroundImage: "url('/dist/assets/bg-shadow.png')" }}>
 
             <div className="relative max-w-4xl mx-auto text-white z-10">
                 <div className="flex justify-center">
-                    <img className="w-32 md:w-40 lg:w-48" src="/public/assets/banner-main.png" alt="" />
+                    <img className="w-32 md:w-40 lg:w-48" src="/dist/assets/banner-main.png" alt="" />
                 </div>
 
                 <h1 className="text-3xl md:text-4xl font-bold mt-8">
