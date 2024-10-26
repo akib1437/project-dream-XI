@@ -6,20 +6,20 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const ShowData = ({ credit, setCredit }) => {
 
-    const [display, setDisplay] = useState([]);
+    const [dataDisplay, setDataDisplay] = useState([]);
     const [selectedPlayers, setSelectedPlayers] = useState([]);
     const [isAvailable, setIsAvailable] = useState(true);
-    const maxPlayers = 6;
+    const playerLimit = 6;
 
     useEffect(() => {
         fetch('/public/data.json')
             .then(res => res.json())
-            .then(data => setDisplay(data))
+            .then(data => setDataDisplay(data))
             .catch((error) => console.error("Error fetching data:", error));
     }, []);
 
     const handleSelectedPlayer = (player) => {
-        if (selectedPlayers.length >= maxPlayers) {
+        if (selectedPlayers.length >= playerLimit) {
             toast.error("You can select up to 6 players!");
             return;
         }
@@ -29,19 +29,19 @@ const ShowData = ({ credit, setCredit }) => {
             return;
         }
 
-        if (credit < player.biddingPrice) {
+        if (credit < player.biddingAmount) {
             toast.error(`You need more coins to select ${player.name}!`);
             return;
         }
 
 
-        setCredit(credit - player.biddingPrice);
+        setCredit(credit - player.biddingAmount);
         setSelectedPlayers([...selectedPlayers, player]);
         toast.success(`${player.name} selected successfully!`);
 
     };
 
-    const handleDeletePlayer = (playerId) => {
+    const handleDeletedPlayer = (playerId) => {
         setSelectedPlayers(selectedPlayers.filter(player => player.playerId !== playerId));
     };
 
@@ -51,18 +51,18 @@ const ShowData = ({ credit, setCredit }) => {
 
     return (
         <div className="container mx-auto flex flex-col justify-between items-center p-4 md:p-6">
-            <ToastContainer position="top-center" autoClose={3000} />
+            <ToastContainer position="top-center" autoClose={1000} />
 
             <div className="flex flex-col md:flex-row justify-between items-center py-4 px-4 md:px-6 w-full md:w-5/6 mx-auto">
                 <h2 className="text-2xl md:text-4xl font-bold mt-8 mr-40 ml-36 md:ml-0">
-                    {isAvailable ? "Available Players" : `Selected Players (${selectedPlayers.length} / ${maxPlayers})`}
+                    {isAvailable ? "Available Players" : `Selected Players (${selectedPlayers.length} / ${playerLimit})`}
                 </h2>
                 <div>
 
-                    <button className={`btn ${isAvailable ? 'bg-primaryclr' : 'bg-slate-200'} block md:inline-block px-6 md:px-10 py-3 md:rounded-l-lg font-semibold mt-6 md:mt-0`}
+                    <button className={`btn ${isAvailable ? 'bg-primaryclr' : 'bg-gray-200'} block md:inline-block px-6 md:px-10 py-3 md:rounded-l-lg font-semibold mt-6 md:mt-0`}
                         onClick={() => handleToggleView('available')}>Available</button>
 
-                    <button className={`btn ${!isAvailable ? 'bg-primaryclr' : 'bg-slate-200'} block md:inline-block px-4 md:px-8 py-3 rounded-r-lg font-semibold mt-3 md:mt-0`}
+                    <button className={`btn ${!isAvailable ? 'bg-primaryclr' : 'bg-gray-200'} block md:inline-block px-4 md:px-8 py-3 rounded-r-lg font-semibold mt-3 md:mt-0`}
                         onClick={() => handleToggleView('selected')}>Selected <span>({selectedPlayers.length})</span></button>
 
                 </div>
@@ -70,10 +70,10 @@ const ShowData = ({ credit, setCredit }) => {
 
             {isAvailable ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full px-4 py-10">
-                    {display.map((player) => (
+                    {dataDisplay.map((player) => (
                         <div key={player.playerId} className="card bg-base-100 shadow-xl rounded-lg">
                             <figure className="px-4 pt-6">
-                                <img className="w-full h-30 md:h-full rounded-xl" src={player.image} alt="" />
+                                <img className="w-full h-80 md:w-full md:h-80 rounded-xl object-cover object-top" src={player.image} alt="" />
                             </figure>
                             <div className="card-body">
                                 <h2 className="card-title text-xl md:text-3xl text-gray-800 font-bold ml-4 md:ml-10 mt-6">
@@ -88,7 +88,7 @@ const ShowData = ({ credit, setCredit }) => {
                                     Bowling Style: {player.bowlingType}
                                 </h3>
                                 <p className="text-lg text-gray-800 font-medium ml-10 mt-4">
-                                    Price: {player.biddingPrice}
+                                    Price: {player.biddingAmount}
                                 </p>
                             </div>
                             <div className="card-actions mt-4">
@@ -115,10 +115,10 @@ const ShowData = ({ credit, setCredit }) => {
                                             <div>
                                                 <p className="text-lg font-semibold">{player.name}</p>
                                                 <p className="text-sm text-gray-600">Role: {player.battingType}</p>
-                                                <p className="text-sm text-gray-600">Price: {player.biddingPrice}</p>
+                                                <p className="text-sm text-gray-600">Price: {player.biddingAmount}</p>
                                             </div>
                                         </div>
-                                        <button onClick={() => handleDeletePlayer(player.playerId)}>
+                                        <button onClick={() => handleDeletedPlayer(player.playerId)}>
                                             <FaTrash className="text-red-600"></FaTrash>
                                         </button>
                                     </li>

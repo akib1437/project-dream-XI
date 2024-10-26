@@ -1,9 +1,9 @@
 const Footer = () => {
     return (
         <footer className="relative bg-[#13172b] text-white py-8 md:py-16 mt-8 md:mt-[257px] px-4 md:px-8 w-full">
-            <div className="absolute -top-16 md:-top-32 left-1/2 transform -translate-x-1/2 w-11/12 md:w-1/2 bg-gradient-to-r from-[#f1e3e0] to-[#f4dcae] p-6 md:p-8 rounded-lg shadow-lg">
-                <h2 className="text-2xl font-semibold mb-2 text-center text-black">Subscribe to our Newsletter</h2>
-                <p className="text-center mb-4 text-gray-600">Get the latest updates and news right in your inbox!</p>
+            <div className="absolute -top-16 md:-top-32 left-1/2 transform -translate-x-1/2 w-11/12 md:w-1/2 bg-gradient-to-r from-[#5165bd] to-[#f4dcae] p-6 md:p-8 rounded-lg shadow-lg">
+                <h2 className="text-2xl font-bold mb-2 text-center text-black">Subscribe to our Newsletter</h2>
+                <p className="text-center mb-4 text-gray-700">Get the latest updates and news right in your inbox!</p>
                 <div className="flex justify-center space-x-2">
                     <input type="email" placeholder="Enter your email" className="w-3/4 p-3 rounded-lg border border-gray-300" />
                     <button className="bg-gradient-to-r from-[#e09cff] to-[#f4b500] text-black px-4 py-3 rounded-lg font-semibold">
